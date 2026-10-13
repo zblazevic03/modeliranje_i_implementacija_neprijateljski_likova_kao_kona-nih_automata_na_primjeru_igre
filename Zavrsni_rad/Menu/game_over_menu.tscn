@@ -1,0 +1,50 @@
+[gd_scene load_steps=4 format=3 uid="uid://5sj4goo6ujqd"]
+
+[ext_resource type="Script" path="res://Menu/game_over_menu.gd" id="1_othra"]
+[ext_resource type="Texture2D" uid="uid://p54uta36jen1" path="res://- Classic 64 Asset Pack 0.6/Metal/Materials/metal_diamondplate_04.jpg" id="1_qa4ay"]
+[ext_resource type="Texture2D" uid="uid://drir3vfwd5gg" path="res://Materials/Logo/Cool Text - Game over 464709988553379.png" id="2_c6chg"]
+
+[node name="game_over_menu" type="Node"]
+script = ExtResource("1_othra")
+
+[node name="background" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+texture = ExtResource("1_qa4ay")
+stretch_mode = 1
+
+[node name="game_over" type="TextureRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -315.0
+offset_top = -163.0
+offset_right = 323.0
+offset_bottom = -48.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_c6chg")
+
+[node name="Button" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -176.0
+offset_top = 37.0
+offset_right = 178.0
+offset_bottom = 139.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 30
+text = "Restart the game"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

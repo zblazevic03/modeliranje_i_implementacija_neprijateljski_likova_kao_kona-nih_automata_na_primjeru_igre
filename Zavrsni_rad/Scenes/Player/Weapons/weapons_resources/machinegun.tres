@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="WeaponResource" load_steps=2 format=3 uid="uid://cmxnytixvww0l"]
+
+[ext_resource type="Script" path="res://Scenes/Player/Weapons/weapon_resources.gd" id="1_hyqi3"]
+
+[resource]
+script = ExtResource("1_hyqi3")
+weapon_name = "Machinegun"
+activate_anim = "Machinegun Activate"
+shoot_anim = "Machinegun Shooting"
+reload_anim = "Machinegun Reload"
+deactivate_anim = "Machinegun Deactivate"
+current_ammo = 24
+reserve_ammo = 64
+magazine = 24
+auto_fire = true
+max_ammo = 120
+type = 1
+weapon_range = 2000
+damage = 1
+projectile_velocity = 0

@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://xaimygiv2f1a"]
+
+[ext_resource type="Script" path="res://Scenes/Targets/static_target.gd" id="1_rxh71"]
+[ext_resource type="PackedScene" uid="uid://dx326ypiajm0u" path="res://Scenes/Targets/targetSmall.glb" id="1_u2uf7"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_3iu3i"]
+points = PackedVector3Array(0.025, -1.95801e-05, 0.1, 0.025, 0.0749804, 0.0749804, -0.025, -1.95801e-05, 0.1, 0.025, -0.0750196, 0.0749804, 0.025, 0.1, -1.95801e-05, -0.025, 0.0749804, 0.0749804, -0.025, -0.0750196, 0.0749804, 0.025, -0.1, -1.95801e-05, -0.025, 0.1, -1.95801e-05, 0.025, 0.0749804, -0.0750196, -0.025, -0.1, -1.95801e-05, 0.025, -0.0750196, -0.0750196, -0.025, 0.0749804, -0.0750196, 0.025, -1.95801e-05, -0.1, -0.025, -0.0750196, -0.0750196, -0.025, -1.95801e-05, -0.1)
+
+[node name="StaticTarget" type="StaticBody3D"]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
+script = ExtResource("1_rxh71")
+
+[node name="targetSmall2" parent="." instance=ExtResource("1_u2uf7")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="targetSmall2"]
+shape = SubResource("ConvexPolygonShape3D_3iu3i")
+
+[editable path="targetSmall2"]

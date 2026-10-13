@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://djbxsot3rq1qm"]
+
+[ext_resource type="Script" path="res://Scenes/Player/Weapons/bullet_projectile.gd" id="1_5cx8y"]
+[ext_resource type="ArrayMesh" uid="uid://bs1sw6oiwb0a8" path="res://3dModels/Weapon3dModel/ammo_rocket.obj" id="1_je8sv"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_cy650"]
+radius = 0.0691219
+height = 0.367213
+
+[node name="bullet" type="RigidBody3D"]
+collision_layer = 16
+collision_mask = 5
+max_contacts_reported = 3
+contact_monitor = true
+script = ExtResource("1_5cx8y")
+
+[node name="AmmoRocket" type="MeshInstance3D" parent="."]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
+mesh = ExtResource("1_je8sv")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.0696346, -0.997573, 0, 0.997573, -0.0696346, 0, 0, 0)
+shape = SubResource("CapsuleShape3D_cy650")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+autostart = true
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://cxhvoustr7vuc"]
+
+[ext_resource type="Texture2D" uid="uid://cgnmvt6h0ltr5" path="res://- Classic 64 Asset Pack 0.6/Walls/Materials/siding_blue_01.jpg" id="1_03d2o"]
+
+[resource]
+albedo_texture = ExtResource("1_03d2o")

@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dvq2c517kc1if"]
+
+[ext_resource type="Texture2D" uid="uid://dt52qr1e2iyd4" path="res://- Classic 64 Asset Pack 0.6/Rocks/Materials/rock_wall_02.jpg" id="1_sj1yb"]
+
+[resource]
+albedo_texture = ExtResource("1_sj1yb")

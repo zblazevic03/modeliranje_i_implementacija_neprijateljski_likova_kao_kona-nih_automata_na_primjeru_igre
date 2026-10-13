@@ -1,0 +1,50 @@
+[gd_scene load_steps=4 format=3 uid="uid://cp7jtd2y0bwoo"]
+
+[ext_resource type="Texture2D" uid="uid://p54uta36jen1" path="res://- Classic 64 Asset Pack 0.6/Metal/Materials/metal_diamondplate_04.jpg" id="1_bi1h1"]
+[ext_resource type="Script" path="res://Menu/you_win_menu.gd" id="1_nnryq"]
+[ext_resource type="Texture2D" uid="uid://bg1mt8cbscojh" path="res://Materials/Logo/Cool Text - You win 464826161235645.png" id="3_5aeye"]
+
+[node name="you_win_menu" type="Node"]
+script = ExtResource("1_nnryq")
+
+[node name="background" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_bi1h1")
+stretch_mode = 1
+
+[node name="game_over" type="TextureRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -315.0
+offset_top = -163.0
+offset_right = 323.0
+offset_bottom = -48.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_5aeye")
+
+[node name="level" type="Button" parent="."]
+offset_left = 699.0
+offset_top = 378.0
+offset_right = 1050.0
+offset_bottom = 455.0
+theme_override_font_sizes/font_size = 30
+text = "Restart the game"
+
+[node name="shoot down" type="Button" parent="."]
+offset_left = 187.0
+offset_top = 378.0
+offset_right = 526.0
+offset_bottom = 455.0
+theme_override_font_sizes/font_size = 30
+text = "Close the game"
+
+[connection signal="pressed" from="level" to="." method="_on_level_pressed"]
+[connection signal="pressed" from="shoot down" to="." method="_on_shoot_down_pressed"]

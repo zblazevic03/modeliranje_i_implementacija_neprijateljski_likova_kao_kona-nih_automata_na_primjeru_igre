@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="WeaponResource" load_steps=2 format=3 uid="uid://cdonwecmg04ih"]
+
+[ext_resource type="Script" path="res://Scenes/Player/Weapons/weapon_resources.gd" id="1_otusx"]
+
+[resource]
+script = ExtResource("1_otusx")
+weapon_name = "Pistol"
+activate_anim = "Pistol Activate"
+shoot_anim = "Pistol Shooting"
+reload_anim = "Pistol Reload"
+deactivate_anim = "Pistol Deactivate"
+current_ammo = 4
+reserve_ammo = 16
+magazine = 4
+auto_fire = true
+max_ammo = 16
+type = 1
+weapon_range = 2000
+damage = 1
+projectile_velocity = 0

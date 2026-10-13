@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://drg5co4w68ym1"]
+
+[ext_resource type="Script" path="res://Scenes/Player/Weapons/weapon_pickup.gd" id="1_aymdn"]
+[ext_resource type="ArrayMesh" uid="uid://ds843jiffayl1" path="res://3dModels/Weapon3dModel/knife_smooth.obj" id="2_kuaax"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_djyhc"]
+
+[node name="weapon_pickup" type="RigidBody3D" groups=["PickupGroup"]]
+collision_layer = 8
+collision_mask = 15
+script = ExtResource("1_aymdn")
+weap_name = "Rocketlouncher"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_djyhc")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
+mesh = ExtResource("2_kuaax")
+skeleton = NodePath("../CollisionShape3D")

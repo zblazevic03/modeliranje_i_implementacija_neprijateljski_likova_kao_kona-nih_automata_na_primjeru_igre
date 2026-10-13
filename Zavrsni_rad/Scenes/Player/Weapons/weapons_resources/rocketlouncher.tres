@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="WeaponResource" load_steps=3 format=3 uid="uid://s4uuyrf24xw2"]
+
+[ext_resource type="Script" path="res://Scenes/Player/Weapons/weapon_resources.gd" id="1_4s8s4"]
+[ext_resource type="PackedScene" uid="uid://djbxsot3rq1qm" path="res://Scenes/Player/Weapons/bullet_projectile.tscn" id="1_iwplj"]
+
+[resource]
+script = ExtResource("1_4s8s4")
+weapon_name = "Rocketlauncher"
+activate_anim = "Rocketlauncher Acitvate"
+shoot_anim = "Rocketlauncher Shooting"
+reload_anim = "Rocketlauncher Reload"
+deactivate_anim = "Rocketlauncher Deactivate"
+current_ammo = 2
+reserve_ammo = 4
+magazine = 2
+auto_fire = false
+max_ammo = 10
+type = 2
+weapon_range = 2000
+damage = 5
+projectile_velocity = 50
+projectile_to_load = ExtResource("1_iwplj")

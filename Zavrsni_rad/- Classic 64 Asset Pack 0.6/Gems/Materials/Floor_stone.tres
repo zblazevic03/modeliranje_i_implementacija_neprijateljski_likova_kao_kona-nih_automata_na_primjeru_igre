@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dqj7fpq8uy5in"]
+
+[ext_resource type="Texture2D" uid="uid://dxt0mbhwwkb7w" path="res://- Classic 64 Asset Pack 0.6/Gems/Materials/red_gemstone_tiles_spec.png" id="1_ddri4"]
+
+[resource]
+albedo_texture = ExtResource("1_ddri4")
