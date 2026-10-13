@@ -7,7 +7,7 @@
 **Studij:** Informacijske tehnologije i digitalizacija poslovanja  
 **Godina:** 2024.
 
-## 📖 O projektu
+## 📖 O završnom radu
 
 **City Siege** je 3D pucačka igra iz prvog lica (FPS), izrađena kao praktični dio završnog rada. Glavni cilj projekta bio je pokazati kako se **konačni automati (Finite State Machines – FSM)** mogu primijeniti za upravljanje ponašanjem neprijateljskih likova u videoigrama.
 
